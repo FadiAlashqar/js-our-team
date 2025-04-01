@@ -14,11 +14,11 @@
     padding: 10px;
 }
 body{
-    font-family: 'Fredoka';
+    font-family: 'Fredoka', sans-serif !important;
 }
 h1{
-    color: rgb(221, 67, 93);
-    font-weight: 700;
+    color: rgb(221, 67, 93) !important;
+    font-weight: 700 !important;
 }
 .card-image{
     width: 100px;
