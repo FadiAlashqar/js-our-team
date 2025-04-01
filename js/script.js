@@ -37,5 +37,26 @@ const teamMembers = [
   }
 ];
 
-const teamCard = document.querySelector('.team-card');
+const cardContainer = document.getElementById('card-container')
 let card = '';
+
+for (let i = 0; i < teamMembers.length; i++) {
+  
+  const {name, role, email, img} = teamMembers[i];
+  card += `<div class="col-4">
+                    <div class="team-card d-flex">
+                        <div class="card-image">
+                            <img src="${img}" class="img-fluid h-100">
+                        </div>
+                          <div class="card-text white">
+                            <h5>${name}</h5>
+                            <p>${role}</p>
+                            <a href="mailto:${email}">${email}</a>
+                          </div>
+                    </div>
+            </div>`
+  
+  cardContainer.innerHTML = card;
+}
+
+
